@@ -59,6 +59,7 @@ var (
 	}
 
 	cryptoDescription = `
+	测试测试测试
 	可用的方法 <method>:
 		aes-128-ctr, aes-192-ctr, aes-256-ctr,
 		aes-128-cfb, aes-192-cfb, aes-256-cfb,
