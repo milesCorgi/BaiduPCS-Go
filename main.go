@@ -35,7 +35,7 @@ import (
 
 const (
 	// NameShortDisplayNum 文件名缩略显示长度
-	NameShortDisplayNum = 16
+	NameShortDisplayNum = 20
 )
 
 var (
