@@ -35,13 +35,12 @@ import (
 
 const (
 	// NameShortDisplayNum 文件名缩略显示长度
-	NameShortDisplayNum = 16
+	NameShortDisplayNum = 20
 )
 
 var (
 	// Version 版本号
-	Version = "v3.5.6-devel"
-
+	Version         = "v3.5.6-devel"
 	historyFilePath = filepath.Join(pcsconfig.GetConfigDir(), "pcs_command_history.txt")
 	reloadFn        = func(c *cli.Context) error {
 		err := pcsconfig.Config.Reload()
@@ -78,7 +77,8 @@ var (
 
 func init() {
 	pcsutil.ChWorkDir()
-
+	test := "测试测试测试"
+	fmt.Println(test)
 	err := pcsconfig.Config.Init()
 	switch err {
 	case nil:
